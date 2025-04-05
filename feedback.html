@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Feedback Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+            <div class="container ">
+                <a class="navbar-brand fw-bolder fst-italic fs-4 m-auto" href="#">
+                    <img src="images/aquatic-paradise-PNG.png" alt="Logo" width="30%" height="30%" class="d-inline-block align-CENTER fw-bolder">AQUATIC PARADISE
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto fw-bolder gap-4">
+                        <li class="nav-item"><a class="nav-link active" href="index.html" target="_blank">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html" target="_self">ABOUT </a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html" target="_self">PRICING</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT </a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PAGES
+                            </a>
+                            <ul class="dropdown-menu bg-light" aria-labelledby="pagesDropdown">
+                                <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                               
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-custom mx-5" style="width: 15%;" href="pricing.html">Buy Ticket</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="hero-content ">
+            <h1 class="feedback fw-bold">Feedback Form</h1>
+            
+        </div>
+    </section>
+    <br>
+    <div class="container fw-bolder fs-5">
+        <div class="logo">
+            <img src="images/aquatic-paradise-PNG.png" style="width: 300px;">
+        <h2 class="text-center fw-bolder fs-1">AQUATIC PARADISE FEEDBACK FORM</h2>
+        <p class="text-center">Please rate the following aspects</p>
+    </div>
+
+        <form action="#" method="POST">
+            <table class="table table-bordered border-dark text-center">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Very Good</th>
+                        <th>Good</th>
+                        <th>Fair</th>
+                        <th>Poor</th>
+                        <th>Very Poor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rate your overall satisfaction with the Aquarium</td>
+                        <td><input type="radio" name="satisfaction" value="Very Good"></td>
+                        <td><input type="radio" name="satisfaction" value="Good"></td>
+                        <td><input type="radio" name="satisfaction" value="Fair"></td>
+                        <td><input type="radio" name="satisfaction" value="Poor"></td>
+                        <td><input type="radio" name="satisfaction" value="Very Poor"></td>
+                    </tr>
+                    <tr>
+                        <td>Are you satisfied from our aquaruim services?</td>
+                        <td><input type="radio" name="ease_of_use" value="Very Good"></td>
+                        <td><input type="radio" name="ease_of_use" value="Good"></td>
+                        <td><input type="radio" name="ease_of_use" value="Fair"></td>
+                        <td><input type="radio" name="ease_of_use" value="Poor"></td>
+                        <td><input type="radio" name="ease_of_use" value="Very Poor"></td>
+                    </tr>
+                    <tr>
+                        <td>How would you rate the cleanliness of the aquaruim interior?</td>
+                        <td><input type="radio" name="performance" value="Very Good"></td>
+                        <td><input type="radio" name="performance" value="Good"></td>
+                        <td><input type="radio" name="performance" value="Fair"></td>
+                        <td><input type="radio" name="performance" value="Poor"></td>
+                        <td><input type="radio" name="performance" value="Very Poor"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mb-3 ">
+                <label class="form-label ">Are you satisfied with the ticket pricing?</label>
+                <div class="form-check form-check-inline w-100 border p-2 rounded bg-light">
+                    <input class="form-check-input" type="radio" name="usability_issues" value="Yes">
+                    <label class="form-check-label">Yes</label>
+                </div>
+                <div class="form-check form-check-inline w-100 border p-2 rounded bg-light">
+                    <input class="form-check-input" type="radio" name="usability_issues" value="No">
+                    <label class="form-check-label">No</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Are you satisfied with the aquaruim cleanliness and hygiene?</label>
+                <div class="form-check form-check-inline w-100 border p-2 rounded bg-light">
+                    <input class="form-check-input" type="radio" name="missing_features" value="Yes">
+                    <label class="form-check-label">Yes</label>
+                </div>
+                <div class="form-check form-check-inline w-100 border p-2 rounded bg-light">
+                    <input class="form-check-input" type="radio" name="missing_features" value="No">
+                    <label class="form-check-label">No</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Did you experience any maintenance issues?</label>
+                <div class="form-check form-check-inline w-100 border p-2 rounded bg-light">
+                    <input class="form-check-input" type="radio" name="performance_issues" value="Yes">
+                    <label class="form-check-label">Yes</label>
+                </div>
+                <div class="form-check form-check-inline w-100 border p-2 rounded bg-light">
+                    <input class="form-check-input" type="radio" name="performance_issues" value="No">
+                    <label class="form-check-label">No</label>
+                </div>
+            </div>
+            <div class="mb-3 ">
+                <label class="form-label ">Overall Experience</label>
+                <select class="form-select fw-bold fs-5">
+                    <option value="5"> Excellent!</option>
+                    <option value="4">  Very Good</option>
+                    <option value="3"> Good</option>
+                    <option value="2"> Needs Improvement</option>
+                    <option value="1"> Disappointing</option>
+                </select>
+            </div>
+
+            <p class="text-center mt-4">Thank you for taking the time to complete this feedback form!</p>
+
+            
+
+            <button type="submit" class="btn btn-dark  w-100 btn-disabled" disabled>SUBMIT FORM</button>
+        </form>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
